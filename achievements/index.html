@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Achievements</title>
+  <link rel="stylesheet" href="./public/stylesheets/achieves.css"/>
+  <link rel="stylesheet" href="./public/stylesheets/common.css"/>
+  <link rel="stylesheet" href="./public/stylesheets/font-awesome.css"/>
+</head>
+
+<body>
+  <div id="verb-header" class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+	  <div class="container">
+	    <a href="http://www.verbling.com/" class="brand"><img src="./public/images/verblinglogo_small.png"></a>
+	  </div>
+	</div>
+  </div>
+  
+  <div id="achieveapp">
+    <section id="main">
+      <ul id="badge-list"></ul>
+      <a id="hide-all">Hide all badges</a>
+    </section>
+    <header>
+      <h1>Earn Badges</h1>
+      <h1><button id="practice">Practice Now</button></h1>
+    </header>
+  </div>
+  
+  <div id="instructions">
+    Practice now to start earning badges.
+  </div>
+  
+  <script src="./public/javascripts/json2.js"></script>
+  <script src="./public/javascripts/jquery-1.7.1.js"></script>
+  <script src="./public/javascripts/underscore.js"></script>
+  <script src="./public/javascripts/backbone-min.js"></script>
+  <script src="./public/javascripts/backbone-localstorage.js"></script>
+  <script src="./public/javascripts/achievements.js"></script>
+
+  <!-- Templates -->
+
+  <script type="text/template" id="item-template">
+    <div class="view">
+      <span class="badge-title">You've unlocked the "<%- title %>" badge!</span>
+      <span class="badge-description"><%- description %></span>
+      <a class="destroy"></a>
+    </div>
+  </script>
+
+  <script type="text/template" id="stats-template">
+    <a id="hide-all">Hide all badges</a>
+  </script>
+  
+  </body>
+</html>

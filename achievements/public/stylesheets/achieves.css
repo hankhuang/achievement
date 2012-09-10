@@ -1,0 +1,205 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	background: #eeeeee;
+	color: #333333;
+	width: 520px;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+#achieveapp {
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 40px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-ms-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+#achieveapp h1 {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	padding: 0 0 10px 0;
+}
+
+#achieveapp button {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main {
+	position:fixed;
+	top: 47px;
+	right: 20px;
+	width:300px;
+	padding: 10px;
+	display: none;
+	background-color: #ffffff;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-width: 2px;
+	border-color: #DDDDDD;
+	border-style: solid;
+	border-top: none;
+}
+
+#badge-list {
+	margin: 0 0px;
+	padding: 0;
+	list-style: none;
+}
+
+#badge-list li {
+	padding: 18px 0px 18px 0;
+	position: relative;
+	font-size: 24px;
+	border-bottom: 1px solid #cccccc;
+}
+
+#badge-list li:last-child {
+	border-bottom: none;
+}
+
+#badge-list li.done label {
+	color: #777777;
+	text-decoration: line-through;
+}
+
+#badge-list .destroy {
+	position: absolute;
+	right: 5px;
+	top: 20px;
+	display: none;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	background: url(../images/destroy.png) no-repeat;
+}
+
+#badge-list li:hover .destroy {
+  	display: block;
+}
+
+#badge-list .destroy:hover {
+  	background-position: 0 -20px;
+}
+
+#badge-list li.editing {
+	border-bottom: none;
+	margin-top: -1px;
+	padding: 0;
+}
+
+#badge-list li.editing:last-child {
+	margin-bottom: -1px;
+}
+
+#badge-list li.editing .edit {
+	display: block;
+	width: 444px;
+	padding: 13px 15px 14px 20px;
+	margin: 0;
+}
+
+#badge-list li.editing .view {
+	display: none;
+}
+
+#badge-list li .view label {
+	word-break: break-word;
+}
+
+#badge-list li .edit {
+	display: none;
+}
+
+#achieveapp footer {
+	display: none;
+	margin: 0 -20px -20px -20px;
+	overflow: hidden;
+	color: #555555;
+	background: #f4fce8;
+	border-top: 1px solid #ededed;
+	padding: 0 20px;
+	line-height: 37px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-ms-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+#hide-all {
+	float: left;
+	line-height: 20px;
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.1);
+	color: #555555;
+	font-size: 11px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 0 10px 1px;
+	cursor: pointer;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+	border-radius: 12px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+}
+
+#hide-all:hover {
+	background: rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+	-ms-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+}
+
+#hide-all:active {
+	position: relative;
+	top: 1px;
+}
+
+#instructions {
+	margin: 10px auto;
+	color: #EEEEEE;
+	text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+	text-align: center;
+}
+
+#instructions a {
+	color: #336699;
+}
+
+.badge-title {
+	font-size:16px;
+}
+
+.badge-description {
+	font-size:12px;
+}
